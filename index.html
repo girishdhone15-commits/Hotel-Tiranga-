@@ -474,6 +474,7 @@
 
     <div class="menu-tabs" id="menuTabs">
       <button class="menu-tab active" data-cat="chicken" data-i18n="menu.cat.chicken">चिकन</button>
+      <button class="menu-tab" data-cat="mutton" data-i18n="menu.cat.mutton">मटण</button>
       <button class="menu-tab" data-cat="fish" data-i18n="menu.cat.fish">फिश</button>
       <button class="menu-tab" data-cat="starters" data-i18n="menu.cat.starters">स्टार्टर</button>
       <button class="menu-tab" data-cat="biryani" data-i18n="menu.cat.biryani">बिर्याणी</button>
@@ -661,9 +662,10 @@ const translations = {
     hero:{eyebrow:"भूम, महाराष्ट्र", title:"हॉटेल तिरंगा", tagline:"\u201Cचविष्ट जेवण, उत्तम चव आणि अविस्मरणीय अनुभव\u201D", btnMenu:"मेनू पहा", btnCall:"आत्ताच कॉल करा", btnDirections:"मार्ग मिळवा", scroll:"खाली स्क्रोल करा"},
     about:{heading:"आमच्याबद्दल", text:"हॉटेल तिरंगा येथे स्वादिष्ट आणि दर्जेदार जेवणाचा आनंद घ्या. ताजे पदार्थ, उत्तम चव आणि चांगली सेवा देण्यावर आमचा भर आहे.", photoNote:"येथे हॉटेलचा फोटो लवकरच जोडला जाईल", statHours:"रोज खुले (दुपार ते मध्यरात्री)", statFresh:"ताजे साहित्य"},
     menu:{heading:"आमचा मेनू", sub:"प्रत्येक पदार्थ ताजा आणि मनापासून बनवलेला", note:"* अंतिम दरांसाठी कृपया हॉटेलमध्ये संपर्क साधा. वरील दर मालकाकडून प्राप्त होताच अद्ययावत केले जातील.",
-      cat:{chicken:"चिकन", fish:"फिश", starters:"स्टार्टर", biryani:"बिर्याणी", roti:"रोटी / नान", main:"मुख्य जेवण", beverages:"पेये"},
+      cat:{chicken:"चिकन", fish:"फिश", starters:"स्टार्टर", biryani:"बिर्याणी", roti:"रोटी / नान", main:"मुख्य जेवण", beverages:"पेये", mutton:"मटण"},
       items:{
         chicken:["चिकन करी","चिकन तंदुरी","चिकन हांडी","बटर चिकन"],
+        mutton:["मटण करी","मटण सुके","मटण रस्सा","मटण हांडी"],
         fish:["फिश फ्राय","फिश करी","तंदुरी फिश"],
         starters:["चिकन लॉलीपॉप","पनीर टिक्का","चिली चिकन"],
         biryani:["चिकन बिर्याणी","मटण बिर्याणी","व्हेज बिर्याणी"],
@@ -689,9 +691,10 @@ const translations = {
     hero:{eyebrow:"Bhoom, Maharashtra", title:"HOTEL TIRANGA", tagline:"\u201CDelicious Food. Great Taste. Memorable Moments.\u201D", btnMenu:"VIEW MENU", btnCall:"CALL NOW", btnDirections:"GET DIRECTIONS", scroll:"Scroll down"},
     about:{heading:"About Us", text:"Enjoy delicious and quality food at Hotel Tiranga. We focus on fresh ingredients, great taste and friendly service.", photoNote:"Hotel photo coming soon", statHours:"Open daily (noon to midnight)", statFresh:"Fresh ingredients"},
     menu:{heading:"Our Menu", sub:"Every dish made fresh, with care", note:"* Please contact the hotel for final prices. Rates above will be updated as soon as they are provided by the owner.",
-      cat:{chicken:"Chicken", fish:"Fish", starters:"Starters", biryani:"Biryani", roti:"Roti / Naan", main:"Main Course", beverages:"Beverages"},
+      cat:{chicken:"Chicken", fish:"Fish", starters:"Starters", biryani:"Biryani", roti:"Roti / Naan", main:"Main Course", beverages:"Beverages", mutton:"Mutton"},
       items:{
         chicken:["Chicken Curry","Chicken Tandoori","Chicken Handi","Butter Chicken"],
+        mutton:["Mutton Curry","Mutton Sukka","Mutton Rassa","Mutton Handi"],
         fish:["Fish Fry","Fish Curry","Tandoori Fish"],
         starters:["Chicken Lollipop","Paneer Tikka","Chilli Chicken"],
         biryani:["Chicken Biryani","Mutton Biryani","Veg Biryani"],
@@ -717,9 +720,10 @@ const translations = {
     hero:{eyebrow:"भूम, महाराष्ट्र", title:"होटल तिरंगा", tagline:"\u201Cस्वादिष्ट खाना, बेहतरीन स्वाद और यादगार अनुभव\u201D", btnMenu:"मेन्यू देखें", btnCall:"अभी कॉल करें", btnDirections:"दिशा-निर्देश", scroll:"नीचे स्क्रॉल करें"},
     about:{heading:"हमारे बारे में", text:"होटल तिरंगा में स्वादिष्ट और गुणवत्तापूर्ण भोजन का आनंद लें। हम ताज़ी सामग्री, बेहतरीन स्वाद और अच्छी सेवा पर ध्यान देते हैं।", photoNote:"होटल की फोटो जल्द जोड़ी जाएगी", statHours:"रोज़ खुला (दोपहर से आधी रात)", statFresh:"ताज़ी सामग्री"},
     menu:{heading:"हमारा मेन्यू", sub:"हर डिश ताज़ी और प्यार से बनाई गई", note:"* अंतिम कीमतों के लिए कृपया होटल से संपर्क करें। मालिक द्वारा दरें मिलते ही यहाँ अपडेट कर दी जाएँगी।",
-      cat:{chicken:"चिकन", fish:"फिश", starters:"स्टार्टर", biryani:"बिरयानी", roti:"रोटी / नान", main:"मुख्य भोजन", beverages:"पेय"},
+      cat:{chicken:"चिकन", fish:"फिश", starters:"स्टार्टर", biryani:"बिरयानी", roti:"रोटी / नान", main:"मुख्य भोजन", beverages:"पेय", mutton:"मटन"},
       items:{
         chicken:["चिकन करी","चिकन तंदूरी","चिकन हांडी","बटर चिकन"],
+        mutton:["मटन करी","मटन सूखा","मटन रस्सा","मटन हांडी"],
         fish:["फिश फ्राई","फिश करी","तंदूरी फिश"],
         starters:["चिकन लॉलीपॉप","पनीर टिक्का","चिली चिकन"],
         biryani:["चिकन बिरयानी","मटन बिरयानी","वेज बिरयानी"],
@@ -862,3 +866,5 @@ applyTranslations(savedLang);
 
 </body>
 </html>
+
+   
