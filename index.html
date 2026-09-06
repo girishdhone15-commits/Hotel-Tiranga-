@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Hotel Tiranga | हॉटेल तिरंगा — Bhoom, Maharashtra</title>
+
+<!-- ============ SEO (multi-language) ============ -->
+<meta name="description" content="हॉटेल तिरंगा, भूम, महाराष्ट्र — चविष्ट जेवण आणि उत्तम सेवा. Hotel Tiranga, Bhoom — Delicious food, great taste, memorable moments. होटल तिरंगा, भूम — स्वादिष्ट खाना और बेहतरीन सेवा.">
+<meta name="keywords" content="Hotel Tiranga, Bhoom hotel, Bhandgoan restaurant, Maharashtra restaurant, best food Bhoom, हॉटेल तिरंगा भूम, chicken biryani Bhoom">
+<meta name="author" content="Hotel Tiranga">
+<meta property="og:title" content="Hotel Tiranga — Bhoom, Maharashtra">
+<meta property="og:description" content="Delicious Food. Great Taste. Memorable Moments. Shop No. 1, Bhandgoan, Bhoom, Maharashtra 413401.">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="mr_IN">
+<meta property="og:locale:alternate" content="en_IN">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Bhoom, Maharashtra">
+
+<!-- ============ Structured data ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Hotel Tiranga",
+  "image": "images/hotel-exterior.jpg",
+  "telephone": "+91 96232 04870",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop No. 1, Bhandgoan",
+    "addressLocality": "Bhoom",
+    "addressRegion": "Maharashtra",
+    "postalCode": "413401",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "12:00",
+    "closes": "23:59"
+  },
+  "servesCuisine": ["Indian", "Chicken", "Biryani", "Fish"],
+  "priceRange": "₹₹"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#14100d;
+    --bg-alt:#1c1611;
+    --surface:#241b14;
+    --surface-2:#2c2118;
+    --text:#f6efe4;
+    --text-mute:#b7a996;
+    --red:#c1272d;
+    --red-deep:#8f1c21;
+    --gold:#d9a441;
+    --saffron:#e58a2a;
+    --green:#1e6b4f;
+    --border:rgba(246,239,228,0.10);
+    --display:'Yatra One', cursive;
+    --body:'Hind', sans-serif;
+    --radius:2px;
+    --shadow:0 18px 40px -20px rgba(0,0,0,0.6);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--body);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  button{font-family:inherit; cursor:pointer;}
+  .container{max-width:1180px; margin:0 auto; padding:0 24px;}
+  h1,h2,h3{font-family:var(--display); font-weight:400; letter-spacing:0.3px;}
+  section{padding:96px 0;}
+  @media(max-width:720px){ section{padding:64px 0;} .container{padding:0 20px;} }
+
+  .tricolor-rule{
+    height:3px; width:64px; margin:18px 0 28px;
+    background:linear-gradient(90deg, var(--saffron) 0 33%, var(--text) 33% 66%, var(--green) 66% 100%);
+    border-radius:1px;
+  }
+  .center .tricolor-rule{ margin-left:auto; margin-right:auto; }
+
+  .eyebrow-none{ /* deliberately no all-caps tracked eyebrows per design guidance */ }
+
+  /* ---------- Header ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:1000;
+    background:rgba(20,16,13,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+    transition:background .3s ease;
+  }
+  .nav-wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px; max-width:1180px; margin:0 auto;
+  }
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand-mark{
+    width:38px; height:38px; border-radius:50%;
+    background:linear-gradient(180deg, var(--saffron), var(--text) 50%, var(--green));
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--display); color:var(--bg); font-size:18px;
+  }
+  .brand-name{font-family:var(--display); font-size:20px; letter-spacing:.5px;}
+
+  .nav-links{display:flex; gap:32px; align-items:center;}
+  .nav-links a{
+    font-size:15.5px; color:var(--text-mute); position:relative; padding:6px 0;
+    transition:color .25s ease;
+  }
+  .nav-links a:hover, .nav-links a.active{color:var(--text);}
+  .nav-links a::after{
+    content:''; position:absolute; left:0; bottom:0; height:2px; width:0;
+    background:var(--gold); transition:width .25s ease;
+  }
+  .nav-links a:hover::after, .nav-links a.active::after{width:100%;}
+
+  .lang-switch{
+    display:flex; align-items:center; gap:2px;
+    border:1px solid var(--border); border-radius:20px; padding:3px;
+    background:rgba(255,255,255,0.02);
+  }
+  .lang-switch button{
+    border:none; background:transparent; color:var(--text-mute);
+    font-family:var(--body); font-size:13.5px; font-weight:600;
+    padding:6px 12px; border-radius:16px; transition:all .25s ease;
+  }
+  .lang-switch button.active{background:var(--red); color:#fff;}
+
+  .hamburger{display:none; flex-direction:column; gap:5px; background:none; border:none; padding:8px;}
+  .hamburger span{width:24px; height:2px; background:var(--text);}
+
+  .mobile-panel{
+    display:none; flex-direction:column; gap:0;
+    background:var(--bg-alt); border-top:1px solid var(--border);
+  }
+  .mobile-panel.open{display:flex;}
+  .mobile-panel a{padding:16px 24px; border-bottom:1px solid var(--border); color:var(--text-mute); font-size:16px;}
+  .mobile-panel .lang-switch{margin:16px 24px 20px;}
+
+  @media(max-width:860px){
+    .nav-links{display:none;}
+    .hamburger{display:flex;}
+    .lang-switch.desktop-only{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    min-height:100vh; display:flex; align-items:center; position:relative;
+    padding-top:96px;
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(193,39,45,0.16), transparent 55%),
+      radial-gradient(ellipse at 80% 80%, rgba(217,164,65,0.12), transparent 55%),
+      linear-gradient(180deg, #171009, #0f0c09 70%);
+  }
+  @media(max-width:720px){
+    /* A tall, narrow mobile screen forces object-fit:cover to zoom a wide
+       photo in heavily. Shortening the hero on mobile brings its aspect
+       ratio closer to the photo's, so less of it needs to be cropped. */
+    .hero{min-height:74vh;}
+  }
+  .hero::before{
+    content:''; position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(20,16,13,0.55), rgba(20,16,13,0.85)),
+      repeating-linear-gradient(135deg, rgba(255,255,255,0.015) 0 2px, transparent 2px 40px);
+    z-index:1;
+  }
+  .hero-inner{position:relative; z-index:2; max-width:760px;}
+  .hero-eyebrow{
+    display:inline-flex; align-items:center; gap:8px; color:var(--gold);
+    font-size:15px; margin-bottom:18px;
+  }
+  .hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);}
+  .hero h1{
+    font-size:clamp(48px, 9vw, 92px); line-height:1;
+    background:linear-gradient(180deg, #fff, #e7d8bd 60%, var(--gold));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero-tagline{
+    font-size:clamp(18px, 2.4vw, 24px); color:var(--text-mute); margin-top:22px; max-width:520px;
+    font-style:italic;
+  }
+  .hero-actions{display:flex; flex-wrap:wrap; gap:14px; margin-top:40px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:15px 28px; border-radius:2px; font-size:15.5px; font-weight:600;
+    border:1px solid transparent; transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--red); color:#fff; box-shadow:0 10px 30px -10px rgba(193,39,45,0.6);}
+  .btn-gold{background:var(--gold); color:#241b14; box-shadow:0 10px 30px -10px rgba(217,164,65,0.5);}
+  .btn-outline{border-color:var(--border); color:var(--text); background:rgba(255,255,255,0.03);}
+  .btn svg{width:18px; height:18px; flex-shrink:0;}
+
+  .scroll-cue{
+    position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+    color:var(--text-mute); font-size:13px; display:flex; flex-direction:column; align-items:center; gap:8px;
+    z-index:2;
+  }
+  .scroll-cue .line{width:1px; height:34px; background:linear-gradient(var(--gold), transparent);}
+
+  /* ---------- Section heads ---------- */
+  .section-head{max-width:640px; margin-bottom:48px;}
+  .section-head h2{font-size:clamp(32px,4.5vw,46px);}
+  .section-head p{color:var(--text-mute); font-size:17px; margin-top:6px;}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid; grid-template-columns:1fr 1.1fr; gap:64px; align-items:center;}
+  @media(max-width:860px){ .about-grid{grid-template-columns:1fr; gap:36px;} }
+  .about-visual{
+    aspect-ratio:4/5; border-radius:2px; position:relative; overflow:hidden;
+    background:linear-gradient(160deg, var(--surface), var(--bg-alt));
+    border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .about-visual .frame-label{
+    color:var(--text-mute); font-size:14px; text-align:center; padding:24px;
+  }
+  .about-text p{font-size:18px; color:#e6d9c6; max-width:52ch;}
+  .about-stats{display:flex; gap:40px; margin-top:36px;}
+  .about-stats div span{display:block; font-family:var(--display); font-size:34px; color:var(--gold);}
+  .about-stats div small{color:var(--text-mute); font-size:13.5px;}
+
+  /* ---------- Menu ---------- */
+  .menu-tabs{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:40px;}
+  .menu-tab{
+    padding:10px 20px; border:1px solid var(--border); border-radius:20px;
+    color:var(--text-mute); font-size:14.5px; font-weight:600; background:rgba(255,255,255,0.02);
+    transition:all .2s ease;
+  }
+  .menu-tab.active{background:var(--red); border-color:var(--red); color:#fff;}
+  .menu-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(270px,1fr)); gap:22px;}
+  .menu-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:2px;
+    overflow:hidden; display:flex; flex-direction:column;
+  }
+  .menu-card-photo{
+    aspect-ratio:4/3; background:linear-gradient(150deg, var(--surface-2), var(--bg-alt));
+    display:flex; align-items:center; justify-content:center; color:var(--text-mute); font-size:13px;
+    border-bottom:1px solid var(--border);
+  }
+  .menu-card-photo .fallback-hide{display:flex; align-items:center; justify-content:center; width:100%; height:100%;}
+  .menu-card-body{padding:18px 20px; display:flex; justify-content:space-between; align-items:center; gap:10px;}
+  .menu-card-body h4{font-family:var(--body); font-weight:600; font-size:16.5px;}
+  .menu-card-body .price{color:var(--gold); font-weight:700; font-size:16px; white-space:nowrap;}
+  .menu-note{color:var(--text-mute); font-size:14px; margin-top:28px;}
+
+  /* ---------- Offers ---------- */
+  .offer-card{
+    display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px;
+    background:linear-gradient(120deg, rgba(193,39,45,0.14), rgba(217,164,65,0.08));
+    border:1px solid var(--border); border-radius:2px; padding:44px;
+  }
+  .offer-card h3{font-size:28px; margin-bottom:8px;}
+  .offer-card p{color:var(--text-mute); max-width:44ch;}
+  .offer-badge{
+    background:var(--gold); color:#241b14; font-weight:700; font-size:15px;
+    padding:12px 22px; border-radius:2px; white-space:nowrap;
+  }
+
+  /* ---------- Gallery ---------- */
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(4, 1fr); grid-auto-rows:150px; gap:14px;
+  }
+  .gallery-grid .g-item:nth-child(1){grid-column:span 2; grid-row:span 2;}
+  .gallery-grid .g-item:nth-child(4){grid-column:span 2;}
+  .gallery-grid .g-item:nth-child(6){grid-column:span 2; grid-row:span 2;}
+  @media(max-width:720px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:130px;}
+    .gallery-grid .g-item:nth-child(1){grid-column:span 2; grid-row:span 1;}
+    .gallery-grid .g-item:nth-child(6){grid-row:span 1;}
+  }
+  .g-item{
+    background:linear-gradient(150deg, var(--surface), var(--bg-alt));
+    border:1px solid var(--border); border-radius:2px; position:relative; overflow:hidden;
+    display:flex; align-items:flex-end; padding:12px;
+  }
+  .g-item span{
+    color:var(--text-mute); font-size:12.5px; background:rgba(20,16,13,0.7);
+    padding:4px 9px; border-radius:12px;
+  }
+
+  /* ---------- Why choose us ---------- */
+  .why-list{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--border); border:1px solid var(--border);}
+  @media(max-width:720px){ .why-list{grid-template-columns:1fr;} }
+  .why-item{background:var(--bg); padding:32px; display:flex; gap:18px; align-items:flex-start;}
+  .why-item .icon{
+    width:44px; height:44px; border-radius:50%; flex-shrink:0;
+    border:1px solid var(--gold); color:var(--gold);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .why-item h4{font-family:var(--body); font-size:17px; font-weight:600; margin-bottom:4px;}
+  .why-item p{color:var(--text-mute); font-size:14.5px;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
+  @media(max-width:860px){ .contact-grid{grid-template-columns:1fr; gap:36px;} }
+  .contact-card{background:var(--surface); border:1px solid var(--border); padding:36px; border-radius:2px;}
+  .contact-row{display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--border);}
+  .contact-row:last-child{border-bottom:none;}
+  .contact-row .icon{color:var(--gold); flex-shrink:0; margin-top:2px;}
+  .contact-row h5{font-size:13.5px; color:var(--text-mute); font-weight:600; margin-bottom:4px;}
+  .contact-row p, .contact-row a{font-size:16px;}
+  .map-frame{border:1px solid var(--border); border-radius:2px; overflow:hidden; height:100%; min-height:340px;}
+  .map-frame iframe{width:100%; height:100%; min-height:340px; border:0; filter:grayscale(0.3) invert(0.92) contrast(0.9);}
+
+  /* ---------- Footer ---------- */
+  footer{border-top:1px solid var(--border); padding:56px 0 28px; background:var(--bg-alt);}
+  .footer-grid{display:flex; flex-wrap:wrap; justify-content:space-between; gap:32px; margin-bottom:40px;}
+  .footer-brand p{color:var(--text-mute); max-width:34ch; margin-top:10px; font-size:14.5px;}
+  .footer-col h5{font-size:14px; color:var(--text-mute); margin-bottom:14px;}
+  .footer-col a{display:block; color:var(--text); font-size:14.5px; margin-bottom:10px; opacity:.85;}
+  .footer-bottom{
+    border-top:1px solid var(--border); padding-top:24px; display:flex; flex-wrap:wrap;
+    justify-content:space-between; gap:10px; color:var(--text-mute); font-size:13px;
+  }
+
+  /* ---------- WhatsApp float ---------- */
+  .wa-float{
+    position:fixed; bottom:24px; right:24px; z-index:900;
+    width:58px; height:58px; border-radius:50%; background:#25D366;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 12px 26px -8px rgba(0,0,0,0.6);
+    animation:pulse-wa 2.6s ease-in-out infinite;
+  }
+  @keyframes pulse-wa{
+    0%,100%{box-shadow:0 12px 26px -8px rgba(0,0,0,0.6), 0 0 0 0 rgba(37,211,102,0.5);}
+    50%{box-shadow:0 12px 26px -8px rgba(0,0,0,0.6), 0 0 0 10px rgba(37,211,102,0);}
+  }
+  .wa-float svg{width:30px; height:30px;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .wa-float{animation:none;}
+    *{transition:none !important; animation-duration:0.01ms !important;}
+  }
+
+  ::selection{background:var(--red); color:#fff;}
+  :focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  /* ============================================================
+     PHOTO SLOTS
+     Every real photo on this site (hero background, about, menu
+     cards, gallery) uses this pattern: an <img class="site-photo">
+     sits inside a positioned container that already has a
+     placeholder look. Until the file at the given src actually
+     exists, the browser fires an "error" event and the image stays
+     hidden (display:none) — so the layout and design never break
+     or show a broken-image icon. The moment a correctly-named file
+     is dropped into /images/, it loads and quietly replaces the
+     placeholder with zero code changes. See images/PUT-PHOTOS-HERE.txt.
+     ============================================================ */
+  .photo-slot{position:relative; overflow:hidden;}
+  .photo-slot .site-photo{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; object-position:center;
+    display:none; /* JS reveals this only after a successful load */
+  }
+  .photo-slot .fallback-hide{position:relative; z-index:1;}
+
+  .hero-bg-photo{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; object-position:center 30%; z-index:0; display:none;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="nav-wrap">
+    <a href="#home" class="brand">
+      <div class="brand-mark">त</div>
+      <div class="brand-name">Hotel Tiranga</div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home" class="active" data-i18n="nav.home">मुख्यपृष्ठ</a>
+      <a href="#about" data-i18n="nav.about">आमच्याबद्दल</a>
+      <a href="#menu" data-i18n="nav.menu">मेनू</a>
+      <a href="#offers" data-i18n="nav.offers">ऑफर्स</a>
+      <a href="#gallery" data-i18n="nav.gallery">गॅलरी</a>
+      <a href="#contact" data-i18n="nav.contact">संपर्क</a>
+    </nav>
+
+    <div class="lang-switch desktop-only" role="group" aria-label="Language selector">
+      <button data-lang="mr" class="active">मराठी</button>
+      <button data-lang="en">English</button>
+      <button data-lang="hi">हिन्दी</button>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#home" data-i18n="nav.home">मुख्यपृष्ठ</a>
+    <a href="#about" data-i18n="nav.about">आमच्याबद्दल</a>
+    <a href="#menu" data-i18n="nav.menu">मेनू</a>
+    <a href="#offers" data-i18n="nav.offers">ऑफर्स</a>
+    <a href="#gallery" data-i18n="nav.gallery">गॅलरी</a>
+    <a href="#contact" data-i18n="nav.contact">संपर्क</a>
+    <div class="lang-switch">
+      <button data-lang="mr" class="active">मराठी</button>
+      <button data-lang="en">English</button>
+      <button data-lang="hi">हिन्दी</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <img class="hero-bg-photo site-photo" src="images/hotel-exterior.jpg" alt="Hotel Tiranga exterior at night" loading="eager" decoding="async">
+  <div class="container hero-inner">
+    <div class="hero-eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">भूम, महाराष्ट्र</span></div>
+    <h1 data-i18n="hero.title">हॉटेल तिरंगा</h1>
+    <p class="hero-tagline" data-i18n="hero.tagline">"चविष्ट जेवण, उत्तम चव आणि अविस्मरणीय अनुभव"</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v4H3zM3 7l2 14h14l2-14M9 21V11m6 10V11"/></svg>
+        <span data-i18n="hero.btnMenu">मेनू पहा</span>
+      </a>
+      <a href="tel:+919623204870" class="btn btn-gold">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span data-i18n="hero.btnCall">आत्ताच कॉल करा</span>
+      </a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Tiranga+Shop+No.+1+Bhandgoan+Bhoom+Maharashtra+413401" target="_blank" rel="noopener" class="btn btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span data-i18n="hero.btnDirections">मार्ग मिळवा</span>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="line"></div><span data-i18n="hero.scroll">खाली स्क्रोल करा</span></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-visual photo-slot">
+      <img class="site-photo" src="images/hotel-interior.jpg" alt="Hotel Tiranga interior seating area" loading="lazy" decoding="async">
+      <div class="frame-label fallback-hide" data-i18n="about.photoNote">येथे हॉटेलचा फोटो लवकरच जोडला जाईल</div>
+    </div>
+    <div class="about-text">
+      <div class="tricolor-rule"></div>
+      <h2 data-i18n="about.heading">आमच्याबद्दल</h2>
+      <p data-i18n="about.text" style="margin-top:18px;">हॉटेल तिरंगा येथे स्वादिष्ट आणि दर्जेदार जेवणाचा आनंद घ्या. ताजे पदार्थ, उत्तम चव आणि चांगली सेवा देण्यावर आमचा भर आहे.</p>
+      <div class="about-stats">
+        <div><span>12–12</span><small data-i18n="about.statHours">रोज खुले (दुपार ते मध्यरात्री)</small></div>
+        <div><span>100%</span><small data-i18n="about.statFresh">ताजे साहित्य</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section id="menu" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head">
+      <div class="tricolor-rule"></div>
+      <h2 data-i18n="menu.heading">आमचा मेनू</h2>
+      <p data-i18n="menu.sub">प्रत्येक पदार्थ ताजा आणि मनापासून बनवलेला</p>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-cat="chicken" data-i18n="menu.cat.chicken">चिकन</button>
+      <button class="menu-tab" data-cat="mutton" data-i18n="menu.cat.mutton">मटण</button>
+      <button class="menu-tab" data-cat="fish" data-i18n="menu.cat.fish">फिश</button>
+      <button class="menu-tab" data-cat="starters" data-i18n="menu.cat.starters">स्टार्टर</button>
+      <button class="menu-tab" data-cat="biryani" data-i18n="menu.cat.biryani">बिर्याणी</button>
+      <button class="menu-tab" data-cat="roti" data-i18n="menu.cat.roti">रोटी / नान</button>
+      <button class="menu-tab" data-cat="main" data-i18n="menu.cat.main">मुख्य जेवण</button>
+      <button class="menu-tab" data-cat="beverages" data-i18n="menu.cat.beverages">पेये</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"><!-- populated by JS --></div>
+    <p class="menu-note" data-i18n="menu.note">* अंतिम दरांसाठी कृपया हॉटेलमध्ये संपर्क साधा. वरील दर मालकाकडून प्राप्त होताच अद्ययावत केले जातील.</p>
+  </div>
+</section>
+
+<!-- ============ OFFERS ============ -->
+<section id="offers">
+  <div class="container">
+    <div class="section-head">
+      <div class="tricolor-rule"></div>
+      <h2 data-i18n="offers.heading">आजची खास ऑफर</h2>
+    </div>
+    <div class="offer-card">
+      <div>
+        <h3 data-i18n="offers.title">लवकरच जाहीर होणार</h3>
+        <p data-i18n="offers.text">सध्या खास ऑफर तयार होत आहे. मालकांकडून तपशील मिळताच येथे अद्ययावत केले जाईल.</p>
+      </div>
+      <div class="offer-badge">₹---</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head">
+      <div class="tricolor-rule"></div>
+      <h2 data-i18n="gallery.heading">आमची गॅलरी</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item photo-slot">
+        <img class="site-photo" src="images/hotel-exterior.jpg" alt="Hotel Tiranga exterior" loading="lazy" decoding="async">
+        <span data-i18n="gallery.exterior">हॉटेल बाहेरील दृश्य</span>
+      </div>
+      <div class="g-item photo-slot">
+        <img class="site-photo" src="images/hotel-interior.jpg" alt="Hotel Tiranga interior" loading="lazy" decoding="async">
+        <span data-i18n="gallery.interior">आतील सजावट</span>
+      </div>
+      <div class="g-item photo-slot">
+        <img class="site-photo" src="images/food-1.jpg" alt="Chicken dish at Hotel Tiranga" loading="lazy" decoding="async">
+        <span data-i18n="gallery.chicken">चिकन</span>
+      </div>
+      <div class="g-item photo-slot">
+        <img class="site-photo" src="images/food-2.jpg" alt="Fish dish at Hotel Tiranga" loading="lazy" decoding="async">
+        <span data-i18n="gallery.fish">फिश</span>
+      </div>
+      <div class="g-item photo-slot">
+        <img class="site-photo" src="images/food-3.jpg" alt="Biryani at Hotel Tiranga" loading="lazy" decoding="async">
+        <span data-i18n="gallery.biryani">बिर्याणी</span>
+      </div>
+      <div class="g-item photo-slot">
+        <img class="site-photo" src="images/hotel-interior.jpg" alt="Dining area at Hotel Tiranga" loading="lazy" decoding="async">
+        <span data-i18n="gallery.dining">डायनिंग एरिया</span>
+      </div>
+      <div class="g-item photo-slot">
+        <img class="site-photo" src="images/menu.jpg" alt="Hotel Tiranga menu" loading="lazy" decoding="async">
+        <span data-i18n="gallery.menuphoto">मेनू</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section id="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="tricolor-rule"></div>
+      <h2 data-i18n="why.heading">आम्हालाच का निवडाल?</h2>
+    </div>
+    <div class="why-list">
+      <div class="why-item">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6M12 22c-4-2-7-6-7-11a7 7 0 0 1 14 0c0 5-3 9-7 11z"/></svg></div>
+        <div><h4 data-i18n="why.item1Title">ताजे आणि चविष्ट जेवण</h4><p data-i18n="why.item1Text">दररोज ताज्या साहित्यापासून बनवलेले पदार्थ</p></div>
+      </div>
+      <div class="why-item">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <div><h4 data-i18n="why.item2Title">दर्जेदार साहित्य</h4><p data-i18n="why.item2Text">निवडक आणि उत्तम प्रतीचे साहित्य वापरतो</p></div>
+      </div>
+      <div class="why-item">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div><h4 data-i18n="why.item3Title">उत्तम सेवा</h4><p data-i18n="why.item3Text">आपुलकीने आणि आदराने केलेली सेवा</p></div>
+      </div>
+      <div class="why-item">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 0 0 1 1h3m10-11l2 2m-2-2v10a1 1 0 0 1-1 1h-3m-6 0a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1m-6 0h6"/></svg></div>
+        <div><h4 data-i18n="why.item4Title">आरामदायी वातावरण</h4><p data-i18n="why.item4Text">कुटुंबासोबत निवांत जेवणासाठी योग्य जागा</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-head">
+      <div class="tricolor-rule"></div>
+      <h2 data-i18n="contact.heading">संपर्क करा</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <h5 data-i18n="contact.addressLabel">पत्ता</h5>
+            <p>Hotel Tiranga<br>Shop No. 1, Bhandgoan, Bhoom, Maharashtra 413401</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <h5 data-i18n="contact.phoneLabel">फोन</h5>
+            <a href="tel:+919623204870">+91 96232 04870</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div>
+            <h5 data-i18n="contact.hoursLabel">वेळ</h5>
+            <p data-i18n="contact.hoursValue">दुपारी 12:00 ते रात्री 12:00</p>
+          </div>
+        </div>
+        <div style="margin-top:24px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="tel:+919623204870" class="btn btn-primary"><span data-i18n="btn.call">कॉल करा</span></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Tiranga+Shop+No.+1+Bhandgoan+Bhoom+Maharashtra+413401" target="_blank" rel="noopener" class="btn btn-outline"><span data-i18n="btn.directions">मार्ग मिळवा</span></a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe title="Hotel Tiranga location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Hotel+Tiranga+Shop+No.+1+Bhandgoan+Bhoom+Maharashtra+413401&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <div class="brand-mark">त</div>
+          <div class="brand-name">Hotel Tiranga</div>
+        </div>
+        <p data-i18n="footer.tagline">"चविष्ट जेवण, उत्तम चव आणि अविस्मरणीय अनुभव"</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.linksTitle">पेजेस</h5>
+        <a href="#about" data-i18n="nav.about">आमच्याबद्दल</a>
+        <a href="#menu" data-i18n="nav.menu">मेनू</a>
+        <a href="#gallery" data-i18n="nav.gallery">गॅलरी</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footer.contactTitle">संपर्क</h5>
+        <a href="tel:+919623204870">+91 96232 04870</a>
+        <a href="#contact" data-i18n="footer.addressShort">भूम, महाराष्ट्र 413401</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 Hotel Tiranga. सर्व हक्क राखीव.</span>
+      <span data-i18n="footer.made">भूम, महाराष्ट्र येथून प्रेमाने</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.88 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.85 1h.01a7.94 7.94 0 0 0 5.54-13.58zm-5.55 12.2h-.01a6.6 6.6 0 0 1-3.37-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.58 6.58 0 0 1 10.2-8.2 6.53 6.53 0 0 1 1.93 4.65 6.6 6.6 0 0 1-6.52 6.64zm3.6-4.93c-.2-.1-1.17-.58-1.35-.64s-.31-.1-.44.1-.51.64-.62.77-.23.15-.42.05a5.4 5.4 0 0 1-1.59-.98 5.95 5.95 0 0 1-1.1-1.37c-.11-.2 0-.3.09-.4.09-.1.2-.23.3-.35.1-.11.13-.2.2-.33a.36.36 0 0 0-.02-.35c-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.34h-.38a.72.72 0 0 0-.52.24 2.2 2.2 0 0 0-.68 1.63c0 .96.7 1.89.8 2.02.1.13 1.38 2.1 3.34 2.95.47.2.83.32 1.12.41.47.15.9.13 1.24.08.38-.06 1.17-.48 1.33-.94.17-.46.17-.86.12-.94-.05-.09-.18-.14-.38-.24z"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   TRANSLATIONS
+   ============================================================ */
+const translations = {
+  mr: {
+    nav:{home:"मुख्यपृष्ठ", about:"आमच्याबद्दल", menu:"मेनू", offers:"ऑफर्स", gallery:"गॅलरी", contact:"संपर्क"},
+    hero:{eyebrow:"भूम, महाराष्ट्र", title:"हॉटेल तिरंगा", tagline:"\u201Cचविष्ट जेवण, उत्तम चव आणि अविस्मरणीय अनुभव\u201D", btnMenu:"मेनू पहा", btnCall:"आत्ताच कॉल करा", btnDirections:"मार्ग मिळवा", scroll:"खाली स्क्रोल करा"},
+    about:{heading:"आमच्याबद्दल", text:"हॉटेल तिरंगा येथे स्वादिष्ट आणि दर्जेदार जेवणाचा आनंद घ्या. ताजे पदार्थ, उत्तम चव आणि चांगली सेवा देण्यावर आमचा भर आहे.", photoNote:"येथे हॉटेलचा फोटो लवकरच जोडला जाईल", statHours:"रोज खुले (दुपार ते मध्यरात्री)", statFresh:"ताजे साहित्य"},
+    menu:{heading:"आमचा मेनू", sub:"प्रत्येक पदार्थ ताजा आणि मनापासून बनवलेला", note:"* अंतिम दरांसाठी कृपया हॉटेलमध्ये संपर्क साधा. वरील दर मालकाकडून प्राप्त होताच अद्ययावत केले जातील.",
+      cat:{chicken:"चिकन", fish:"फिश", starters:"स्टार्टर", biryani:"बिर्याणी", roti:"रोटी / नान", main:"मुख्य जेवण", beverages:"पेये", mutton:"मटण"},
+      items:{
+        chicken:["चिकन करी","चिकन तंदुरी","चिकन हांडी","बटर चिकन"],
+        mutton:["मटण करी","मटण सुके","मटण रस्सा","मटण हांडी"],
+        fish:["फिश फ्राय","फिश करी","तंदुरी फिश"],
+        starters:["चिकन लॉलीपॉप","पनीर टिक्का","चिली चिकन"],
+        biryani:["चिकन बिर्याणी","मटण बिर्याणी","व्हेज बिर्याणी"],
+        roti:["तंदुरी रोटी","बटर नान","लच्छा पराठा"],
+        main:["दाल फ्राय","पनीर मसाला","व्हेज कोल्हापुरी"],
+        beverages:["ताक","सोलकढी","कोल्ड ड्रिंक"]
+      }
+    },
+    offers:{heading:"आजची खास ऑफर", title:"लवकरच जाहीर होणार", text:"सध्या खास ऑफर तयार होत आहे. मालकांकडून तपशील मिळताच येथे अद्ययावत केले जाईल."},
+    gallery:{heading:"आमची गॅलरी", exterior:"हॉटेल बाहेरील दृश्य", interior:"आतील सजावट", chicken:"चिकन", fish:"फिश", biryani:"बिर्याणी", dining:"डायनिंग एरिया", menuphoto:"मेनू"},
+    why:{heading:"आम्हालाच का निवडाल?",
+      item1Title:"ताजे आणि चविष्ट जेवण", item1Text:"दररोज ताज्या साहित्यापासून बनवलेले पदार्थ",
+      item2Title:"दर्जेदार साहित्य", item2Text:"निवडक आणि उत्तम प्रतीचे साहित्य वापरतो",
+      item3Title:"उत्तम सेवा", item3Text:"आपुलकीने आणि आदराने केलेली सेवा",
+      item4Title:"आरामदायी वातावरण", item4Text:"कुटुंबासोबत निवांत जेवणासाठी योग्य जागा"},
+    contact:{heading:"संपर्क करा", addressLabel:"पत्ता", phoneLabel:"फोन", hoursLabel:"वेळ", hoursValue:"दुपारी 12:00 ते रात्री 12:00"},
+    footer:{tagline:"\u201Cचविष्ट जेवण, उत्तम चव आणि अविस्मरणीय अनुभव\u201D", linksTitle:"पेजेस", contactTitle:"संपर्क", addressShort:"भूम, महाराष्ट्र 413401", rights:"© 2026 Hotel Tiranga. सर्व हक्क राखीव.", made:"भूम, महाराष्ट्र येथून प्रेमाने"},
+    btn:{call:"कॉल करा", whatsapp:"WhatsApp करा", viewMenu:"मेनू पहा", directions:"मार्ग मिळवा"},
+    whatsappMsg:"नमस्कार, मला Hotel Tiranga च्या मेनू आणि ऑफर्सबद्दल माहिती हवी आहे."
+  },
+  en: {
+    nav:{home:"Home", about:"About", menu:"Menu", offers:"Offers", gallery:"Gallery", contact:"Contact"},
+    hero:{eyebrow:"Bhoom, Maharashtra", title:"HOTEL TIRANGA", tagline:"\u201CDelicious Food. Great Taste. Memorable Moments.\u201D", btnMenu:"VIEW MENU", btnCall:"CALL NOW", btnDirections:"GET DIRECTIONS", scroll:"Scroll down"},
+    about:{heading:"About Us", text:"Enjoy delicious and quality food at Hotel Tiranga. We focus on fresh ingredients, great taste and friendly service.", photoNote:"Hotel photo coming soon", statHours:"Open daily (noon to midnight)", statFresh:"Fresh ingredients"},
+    menu:{heading:"Our Menu", sub:"Every dish made fresh, with care", note:"* Please contact the hotel for final prices. Rates above will be updated as soon as they are provided by the owner.",
+      cat:{chicken:"Chicken", fish:"Fish", starters:"Starters", biryani:"Biryani", roti:"Roti / Naan", main:"Main Course", beverages:"Beverages", mutton:"Mutton"},
+      items:{
+        chicken:["Chicken Curry","Chicken Tandoori","Chicken Handi","Butter Chicken"],
+        mutton:["Mutton Curry","Mutton Sukka","Mutton Rassa","Mutton Handi"],
+        fish:["Fish Fry","Fish Curry","Tandoori Fish"],
+        starters:["Chicken Lollipop","Paneer Tikka","Chilli Chicken"],
+        biryani:["Chicken Biryani","Mutton Biryani","Veg Biryani"],
+        roti:["Tandoori Roti","Butter Naan","Lachha Paratha"],
+        main:["Dal Fry","Paneer Masala","Veg Kolhapuri"],
+        beverages:["Buttermilk","Solkadhi","Cold Drink"]
+      }
+    },
+    offers:{heading:"Today's Special Offer", title:"Coming Soon", text:"A special offer is being prepared. This section will be updated as soon as the owner shares the details."},
+    gallery:{heading:"Our Gallery", exterior:"Hotel Exterior", interior:"Interior", chicken:"Chicken", fish:"Fish", biryani:"Biryani", dining:"Dining Area", menuphoto:"Menu"},
+    why:{heading:"Why Choose Us",
+      item1Title:"Fresh & Tasty Food", item1Text:"Dishes made fresh with quality ingredients every day",
+      item2Title:"Quality Ingredients", item2Text:"We use carefully selected, top-quality ingredients",
+      item3Title:"Great Service", item3Text:"Warm and respectful service, every visit",
+      item4Title:"Comfortable Atmosphere", item4Text:"A relaxed space to enjoy a meal with family"},
+    contact:{heading:"Contact Us", addressLabel:"Address", phoneLabel:"Phone", hoursLabel:"Hours", hoursValue:"12:00 PM – 12:00 AM"},
+    footer:{tagline:"\u201CDelicious Food. Great Taste. Memorable Moments.\u201D", linksTitle:"Pages", contactTitle:"Contact", addressShort:"Bhoom, Maharashtra 413401", rights:"© 2026 Hotel Tiranga. All rights reserved.", made:"Made with love in Bhoom, Maharashtra"},
+    btn:{call:"Call Now", whatsapp:"WhatsApp", viewMenu:"View Menu", directions:"Get Directions"},
+    whatsappMsg:"Hello, I would like to know more about Hotel Tiranga's menu and offers."
+  },
+  hi: {
+    nav:{home:"होम", about:"हमारे बारे में", menu:"मेन्यू", offers:"ऑफर्स", gallery:"गैलरी", contact:"संपर्क"},
+    hero:{eyebrow:"भूम, महाराष्ट्र", title:"होटल तिरंगा", tagline:"\u201Cस्वादिष्ट खाना, बेहतरीन स्वाद और यादगार अनुभव\u201D", btnMenu:"मेन्यू देखें", btnCall:"अभी कॉल करें", btnDirections:"दिशा-निर्देश", scroll:"नीचे स्क्रॉल करें"},
+    about:{heading:"हमारे बारे में", text:"होटल तिरंगा में स्वादिष्ट और गुणवत्तापूर्ण भोजन का आनंद लें। हम ताज़ी सामग्री, बेहतरीन स्वाद और अच्छी सेवा पर ध्यान देते हैं।", photoNote:"होटल की फोटो जल्द जोड़ी जाएगी", statHours:"रोज़ खुला (दोपहर से आधी रात)", statFresh:"ताज़ी सामग्री"},
+    menu:{heading:"हमारा मेन्यू", sub:"हर डिश ताज़ी और प्यार से बनाई गई", note:"* अंतिम कीमतों के लिए कृपया होटल से संपर्क करें। मालिक द्वारा दरें मिलते ही यहाँ अपडेट कर दी जाएँगी।",
+      cat:{chicken:"चिकन", fish:"फिश", starters:"स्टार्टर", biryani:"बिरयानी", roti:"रोटी / नान", main:"मुख्य भोजन", beverages:"पेय", mutton:"मटन"},
+      items:{
+        chicken:["चिकन करी","चिकन तंदूरी","चिकन हांडी","बटर चिकन"],
+        mutton:["मटन करी","मटन सूखा","मटन रस्सा","मटन हांडी"],
+        fish:["फिश फ्राई","फिश करी","तंदूरी फिश"],
+        starters:["चिकन लॉलीपॉप","पनीर टिक्का","चिली चिकन"],
+        biryani:["चिकन बिरयानी","मटन बिरयानी","वेज बिरयानी"],
+        roti:["तंदूरी रोटी","बटर नान","लच्छा पराठा"],
+        main:["दाल फ्राई","पनीर मसाला","वेज कोल्हापुरी"],
+        beverages:["छाछ","सोलकढी","कोल्ड ड्रिंक"]
+      }
+    },
+    offers:{heading:"आज का खास ऑफर", title:"जल्द आ रहा है", text:"एक खास ऑफर तैयार किया जा रहा है। मालिक से जानकारी मिलते ही इसे यहाँ अपडेट कर दिया जाएगा।"},
+    gallery:{heading:"हमारी गैलरी", exterior:"होटल का बाहरी दृश्य", interior:"आंतरिक सजावट", chicken:"चिकन", fish:"फिश", biryani:"बिरयानी", dining:"डाइनिंग एरिया", menuphoto:"मेन्यू"},
+    why:{heading:"हमें ही क्यों चुनें?",
+      item1Title:"ताज़ा और स्वादिष्ट खाना", item1Text:"हर दिन ताज़ी सामग्री से बना खाना",
+      item2Title:"गुणवत्तापूर्ण सामग्री", item2Text:"हम चुनी हुई, बेहतरीन सामग्री का उपयोग करते हैं",
+      item3Title:"बेहतरीन सेवा", item3Text:"अपनेपन और सम्मान के साथ दी जाने वाली सेवा",
+      item4Title:"आरामदायक माहौल", item4Text:"परिवार के साथ इत्मीनान से भोजन के लिए उपयुक्त जगह"},
+    contact:{heading:"संपर्क करें", addressLabel:"पता", phoneLabel:"फोन", hoursLabel:"समय", hoursValue:"दोपहर 12:00 बजे से रात 12:00 बजे तक"},
+    footer:{tagline:"\u201Cस्वादिष्ट खाना, बेहतरीन स्वाद और यादगार अनुभव\u201D", linksTitle:"पेज", contactTitle:"संपर्क", addressShort:"भूम, महाराष्ट्र 413401", rights:"© 2026 Hotel Tiranga. सर्वाधिकार सुरक्षित।", made:"भूम, महाराष्ट्र से प्यार के साथ"},
+    btn:{call:"अभी कॉल करें", whatsapp:"WhatsApp करें", viewMenu:"मेन्यू देखें", directions:"दिशा-निर्देश"},
+    whatsappMsg:"नमस्ते, मुझे Hotel Tiranga के मेन्यू और ऑफर्स के बारे में जानकारी चाहिए।"
+  }
+};
+
+/* ============================================================
+   HELPERS
+   ============================================================ */
+function getDeep(obj, path){
+  return path.split('.').reduce((o,k)=> (o && o[k] !== undefined) ? o[k] : null, obj);
+}
+
+const menuCategories = ["chicken","fish","starters","biryani","roti","main","beverages"];
+
+const foodPhotos = ['images/food-1.jpg', 'images/food-2.jpg', 'images/food-3.jpg'];
+
+function renderMenu(lang, activeCat){
+  const t = translations[lang];
+  const grid = document.getElementById('menuGrid');
+  const items = t.menu.items[activeCat] || [];
+  grid.innerHTML = items.map((name, i) => `
+    <div class="menu-card">
+      <div class="menu-card-photo photo-slot">
+        <img class="site-photo" src="${foodPhotos[i % foodPhotos.length]}" alt="${name}" loading="lazy" decoding="async">
+        <span class="fallback-hide">${t.menu.cat[activeCat]}</span>
+      </div>
+      <div class="menu-card-body">
+        <h4>${name}</h4>
+        <div class="price">₹---</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function applyTranslations(lang){
+  const t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const val = getDeep(t, el.getAttribute('data-i18n'));
+    if(val !== null) el.textContent = val;
+  });
+  document.documentElement.lang = lang;
+
+  // WhatsApp link
+  const waMsg = encodeURIComponent(t.whatsappMsg);
+  document.getElementById('waFloat').href = `https://wa.me/919623204870?text=${waMsg}`;
+
+  // Menu tab labels already covered by data-i18n; re-render current category
+  const activeTab = document.querySelector('.menu-tab.active');
+  const cat = activeTab ? activeTab.getAttribute('data-cat') : 'chicken';
+  renderMenu(lang, cat);
+
+  // lang switch active state
+  document.querySelectorAll('.lang-switch button').forEach(btn=>{
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+
+  localStorage.setItem('hotelTirangaLang', lang);
+}
+
+/* ============================================================
+   PHOTO SLOTS — reveal a real image once it loads; otherwise the
+   existing placeholder/label stays visible. Delegated on document
+   with capture:true so this also covers menu-card images that are
+   rendered later by renderMenu().
+   ============================================================ */
+document.addEventListener('load', (e)=>{
+  const img = e.target;
+  if(!(img.tagName === 'IMG' && img.classList.contains('site-photo'))) return;
+  img.style.display = 'block';
+  const hideTarget = img.parentElement && img.parentElement.querySelector('.fallback-hide');
+  if(hideTarget) hideTarget.style.display = 'none';
+}, true);
+
+document.addEventListener('error', (e)=>{
+  const img = e.target;
+  if(!(img.tagName === 'IMG' && img.classList.contains('site-photo'))) return;
+  img.style.display = 'none'; // keep placeholder/fallback visible, no broken-image icon
+}, true);
+
+/* ============================================================
+   EVENTS
+   ============================================================ */
+document.querySelectorAll('.lang-switch button').forEach(btn=>{
+  btn.addEventListener('click', ()=> applyTranslations(btn.getAttribute('data-lang')));
+});
+
+document.getElementById('hamburgerBtn').addEventListener('click', ()=>{
+  document.getElementById('mobilePanel').classList.toggle('open');
+});
+
+document.querySelectorAll('.mobile-panel a').forEach(a=>{
+  a.addEventListener('click', ()=> document.getElementById('mobilePanel').classList.remove('open'));
+});
+
+document.getElementById('menuTabs').addEventListener('click', (e)=>{
+  const tab = e.target.closest('.menu-tab');
+  if(!tab) return;
+  document.querySelectorAll('.menu-tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  const currentLang = localStorage.getItem('hotelTirangaLang') || 'mr';
+  renderMenu(currentLang, tab.getAttribute('data-cat'));
+});
+
+// active nav link on scroll
+const navSections = ['home','about','menu','offers','gallery','contact'];
+window.addEventListener('scroll', ()=>{
+  let current = 'home';
+  navSections.forEach(id=>{
+    const el = document.getElementById(id);
+    if(el && window.scrollY >= el.offsetTop - 140) current = id;
+  });
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.classList.toggle('active', a.getAttribute('href') === '#'+current);
+  });
+});
+
+/* ============================================================
+   INIT — default Marathi, but remember last choice
+   ============================================================ */
+const savedLang = localStorage.getItem('hotelTirangaLang') || 'mr';
+applyTranslations(savedLang);
+</script>
+
+</body>
+</html>
